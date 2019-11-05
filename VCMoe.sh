@@ -115,7 +115,7 @@ function CentOS6() {
 	echo "防火墙关闭完成"
 	echo " "
 }
-
+ 
 function CentOS7() {
     echo "	检测到系统为:CentOS7,安装7系运行库,并关闭系统防火墙"
     yum clean all
