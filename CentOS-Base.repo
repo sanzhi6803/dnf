@@ -1,0 +1,40 @@
+[base]
+name=CentOS-5.11 - Base
+failovermethod=priority
+baseurl=http://archive.kernel.org/centos-vault/5.11/os/$basearch/
+gpgcheck=1
+gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
+ 
+#released updates
+[updates]
+name=CentOS-5.11 - Updates
+failovermethod=priority
+baseurl=http://archive.kernel.org/centos-vault/5.11/updates/$basearch/
+gpgcheck=1
+gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
+ 
+#additional packages that may be useful
+[extras]
+name=CentOS-5.11 - Extras
+failovermethod=priority
+baseurl=http://archive.kernel.org/centos-vault/5.11/extras/$basearch/
+gpgcheck=1
+gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
+ 
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-5.11 - Plus
+failovermethod=priority
+baseurl=http://archive.kernel.org/centos-vault/5.11/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
+ 
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-5.11 - Contrib
+failovermethod=priority
+baseurl=http://archive.kernel.org/centos-vault/5.11/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
