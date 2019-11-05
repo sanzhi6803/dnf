@@ -1,0 +1,8 @@
+支持阿里云(专有网络)、腾讯云及其他可以自动获取IP的服务器或者云主机
+可以DHCP获取IP的，采用全自动安装代码：
+
+yum install -y xz openssl gawk coreutils file
+wget https://db.ci/os/CentOSNET.sh && chmod a+x CentOSNET.sh
+bash CentOSNET.sh -c 5.8 -v 64 -a --mirror 'http://archive.kernel.org/centos-vault'
+
+默认用户：root 密码：Vicer
