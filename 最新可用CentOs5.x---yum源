@@ -29,7 +29,7 @@ baseurl=http://archive.kernel.org/centos-vault/5.11/centosplus/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=http://archive.kernel.org/centos-vault/RPM-GPG-KEY-CentOS-5
- 
+
 #contrib - packages by Centos Users
 [contrib]
 name=CentOS-5.11 - Contrib
