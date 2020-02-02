@@ -2,7 +2,13 @@
 可以DHCP获取IP的，采用全自动安装代码：
 
 yum install -y xz openssl gawk coreutils file
-wget https://db.ci/os/CentOSNET.sh && chmod a+x CentOSNET.sh
-bash CentOSNET.sh -c 5.8 -v 64 -a --mirror 'http://archive.kernel.org/centos-vault'
+wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod a+x InstallNET.sh
+bash InstallNET.sh -c 5.8 -v 64 -a --mirror 'http://archive.kernel.org/centos-vault'
 
-默认用户：root 密码：Vicer
+镜像网站：
+http://vault.centos.org/
+http://archive.kernel.org/centos-vault/
+http://linuxsoft.cern.ch/centos-vault/
+/http://mirror.nsc.liu.se/centos-store/
+
+全自动安装默认root密码:MoeClub.org
